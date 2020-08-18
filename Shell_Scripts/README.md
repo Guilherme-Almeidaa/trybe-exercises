@@ -1,1 +1,1 @@
-Exercícios em Shell Script.
+ Meus exercícios em Shell Script.
