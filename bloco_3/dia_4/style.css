@@ -1,0 +1,100 @@
+body {
+    background-color: cadetblue;
+    border: 5px ridge black
+}
+
+.artigo-primario {
+    position: relative;
+    width: 750px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.Titulo {
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+strong {
+    color: rgb(94, 3, 23)
+}
+
+.fatos {
+    float: right;
+    width: 500px;
+    position: relative;
+}
+
+.descricao {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.foto-descricao {
+    float: right;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: black solid 2px
+}
+
+.link-imagem {
+    position: relative;
+    float: right;
+    left: 210px;
+    top: 280px
+}
+
+.imagem-visao {
+    float: right;
+    margin-right: 10px;
+    border: black ridge 2px;
+    margin-left: 10px;
+}
+
+.imagem-golpe {
+    float: right;
+    margin-right: 10px;
+    border: black ridge 2px
+}
+
+.imagem-estudo {
+    float: right;
+    margin-right: 10px;
+    border: black ridge 2px
+}
+
+.curiosidades {
+    position: relative;
+    margin: 10px;
+}
+
+.subtitulo-curiosidade {
+    text-align: center;
+}
+
+.visão {
+    width: 600px;
+    float: right;
+}
+
+.golpe {
+    width: 500px;
+}
+
+.Estudo {
+    width: 500px;
+}
+
+.video {
+    position: relative;
+    float: right;
+    bottom: 200px;
+}
+
+.footer {
+    clear: both;
+    padding: 50px;
+    text-align: center;
+}
