@@ -18,4 +18,4 @@ for(let i = 0;i <= number;i+=1){
     linha="";
     esquerda-=1;
     direita+=1;
-}
+} 
