@@ -21,5 +21,3 @@ function repeti(numeros) {
 
     return numero
 }
-let n ="Guilherme Almeida"
-console.log(n.split(" "))
