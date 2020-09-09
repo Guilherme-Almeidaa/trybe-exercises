@@ -21,4 +21,3 @@ function repeti(numeros) {
 
     return numero
 }
-console.log(repeti(inteiros))
