@@ -21,18 +21,18 @@
             clicado um alerta contendo a mensagem "Você clicou no botão" deverá ser
             exibido.
         </p>
-        
+
         <div class="tarefa1">Adicione o botão aqui!</div>
         <script>
             let firstDiv = document.querySelector(".tarefa1")
             let button = document.createElement("button")
-            firstDiv.innerText=''
-            button.innerText="Clique aqui"
+            firstDiv.innerText = ''
+            button.innerText = "Clique aqui"
             firstDiv.appendChild(button)
             button.addEventListener('click', function () {
                 alert("Você clicou no botão")
             });
-            
+
         </script>
         <hr />
         <h2>Tarefa 2</h2>
@@ -48,30 +48,37 @@
             exibir um alerta contendo a mensagem "Desconto de R$(resultado)", sendo
             <strong>discount</strong> o resultado da multiplicação.
         </p>
-        <button class ="button-discount">Verificar desconto</button>
+
         <script language="javascript" type="text/javascript">
             let productPrice = 59.99
             let discount = 0.30
-             
-            window.onload
-            let button2 = document.querySelector(".button-discount")
-            button2.addEventListener("click" , discountValue)
 
-            function discountValue (){
-                
-                let discountTotal = productPrice*discount
-                let discountRound = discountTotal.toFixed(2)
-                alert(`Desconto de R$${discountRound}`)
-            }
+
+
+
+            window.onload = function () {
+                let productPrice = 59.99
+                let discount = 0.30
+
+
+
                
-           
+                let button2 = document.querySelector(".button-discount")
+                button2.addEventListener("click", function () {
+                    let discountTotal = productPrice * discount
+                    let discountRound = discountTotal.toFixed(2)
+                    alert(`Desconto de R$${discountRound}`)
+                });
+
+            }
 
 
-                
-            
+
+
+
         </script>
-        
-        
+        <button class="button-discount">Verificar desconto</button>
+
         <hr />
         <h2>Bônus</h2>
         <p>
@@ -87,19 +94,20 @@
             Além disso, sempre que um dos eventos for realizado deve-se logar no
             console qual dos eventos acabou de ocorrer.
         </p>
-        <img  class = "image" src="https://baixarpapeldeparede.com/web/wallpapers/paisagem-49/1280x720.jpg" alt="paisagem" width="400px">
-        
+        <img class="image" src="https://baixarpapeldeparede.com/web/wallpapers/paisagem-49/1280x720.jpg" alt="paisagem"
+            width="400px">
+
     </div>
     <script>
-        
-            let image = document.querySelector(".image")
-            image.addEventListener("mouseover" , function(){
-                image.src="https://baixarpapeldeparede.com/web/wallpapers/paisagem-12/1280x720.jpg"
-            })
-            image.addEventListener("mouseleave" , function(){
-                image.src="https://baixarpapeldeparede.com/web/wallpapers/paisagem-49/1280x720.jpg"
-            })
-        
+
+        let image = document.querySelector(".image")
+        image.addEventListener("mouseover", function () {
+            image.src = "https://baixarpapeldeparede.com/web/wallpapers/paisagem-12/1280x720.jpg"
+        })
+        image.addEventListener("mouseleave", function () {
+            image.src = "https://baixarpapeldeparede.com/web/wallpapers/paisagem-49/1280x720.jpg"
+        })
+
     </script>
 </body>
 
