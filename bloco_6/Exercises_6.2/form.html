@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="title is-1">Formulário</h1>
+    </header>
+    <form action="" method="get" class="form">
+        <fieldset>
+            <div class="field"></div>
+            <labe class="label">Nome:</labe>
+
+            <div class="control">
+                <input type="text" name="nome" id="name" data-validate-field="name">
+            </div>
+            </div>
+            <div class="field">
+                <label class="label">Email:</label>
+
+                <div class="control">
+                    <input name="email" id="email" data-validate-field="email">
+                </div>
+            </div>
+            <div class="field"></div>
+            <label class="label">CPF:</label>
+
+
+
+            <div class="control">
+                <input type="text" name="cpf" id="cpf" size="10" data-validate-field="cpf">
+            </div>
+            </div>
+
+
+            <div class="field">
+                <label class="label">Endereço:</label>
+
+
+                <div class="control">
+                    <input type="text" name="endereço" id="endereço" data-validate-field="end">
+                </div>
+            </div>
+
+
+            <div class="field">
+                <label class="label">Cidade:</label>
+
+                <div class="control">
+                    <input name="cidade" id="cidade" size="10" data-validate-field="city"><br>
+                </div>
+            </div>
+            <div class="field"></div>
+            <label class="label" for="estado">Estado </label>
+
+            <div class="control">
+                <div class="select">
+                    <select name="estado" id="estado" data-validate-field="states">
+                        <option selected='selected' >Selecione</option>
+                </div>
+                </select><br><br>
+            </div>
+            </div>
+            <div class='field'></div>
+            <label class="label">Selecione</label>
+
+            <div class="control">
+                <label class="radio" for="casa"><input type="radio" data-validate-field="casa" value="casa" id="casa"
+                        name="moradia">
+                    Casa</label><br>
+                <label class="radio" for="apartamento"><input type="radio" data-validate-field="apartamento"
+                        value="apartamento" id="apartamento" name="moradia">Apartamento</label>
+            </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <div class="field"></div>
+            <labe class="label">Resumo do currículo</labe>
+
+            <div class="control">
+                <textarea class="textarea" cols="50" id="curriculo" rows="10" 
+                    data-validate-field="curriculo"></textarea><br>
+            </div>
+            </div>
+            <div class="field"></div>
+            <label class="label">Cargo:</label>
+
+            <div class="control">
+                <input type="text"  id="cargo" data-validate-field="cargo"><br>
+            </div>
+            </div>
+            <div class="field">
+                <label class="label">Descrição do cargo:</label>
+                <div calss="control">
+                    <input type="text"  id="descrição-cargo" 
+                        data-validate-field="descricao"><br>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label data">Data de início:</label>
+                <div class="contrl">
+                    <input type="text" name="data" id="date" value="01/01/2000"
+                        data-validate-field="date">
+                </div>
+            </div>
+
+        </fieldset><br>
+
+        <button class="button is-primary" type="submit" id="button">Enviar</button>
+
+
+    </form><br>
+    <button class="button is-primary clear">Limpar</button>
+    <div>
+        <h2 class="return-name"></h2>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script src="js/pikaday.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script>
+        var picker = new Pikaday({
+            field: document.getElementById('date')
+        });
+        new window.JustValidate(".form", {
+            rules: {
+                name: {
+                    required: true,
+                    maxLength: 40
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    maxLength: 50
+                    
+                },
+                cpf: {
+                    required : true,
+                    maxLength: 11
+                    
+                },
+                end: {
+                    required: true,
+                    maxLength :200
+                    
+                },
+                city: {
+                    required: true,
+                    maxLength: 28
+                    
+                },
+                states: {
+                    required: true
+                },
+                casa: {
+                    required: true
+
+                },
+                apartemento: {
+                    required: true
+                },
+                curriculo:{
+                    required:true,
+                    maxLength:1000
+                },
+                cargo:{
+                    
+                    required:true,
+                    maxLength:40
+                },
+                descricao:{
+                    
+                    required:true,
+                    maxLength:500
+                },
+                date:{
+                    required:true
+                }
+
+
+
+
+
+            }
+        });
+    </script>
+</body>
+
+</html>
