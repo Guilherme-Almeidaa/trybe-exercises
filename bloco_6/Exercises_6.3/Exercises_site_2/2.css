@@ -1,14 +1,14 @@
-.torre-grupo-1 {
+.tower-group-1 {
     display: flex;
     justify-content:flex-end;
     }
 
-.torre-grupo-2 {
+.tower-group-2 {
     display: flex;
     justify-content:center;
     }
-    
-.torre-grupo-3 {
+
+.tower-group-3 {
     display: flex;
     justify-content:flex-end;
     }

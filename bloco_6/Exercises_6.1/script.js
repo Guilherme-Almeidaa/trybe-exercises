@@ -113,7 +113,7 @@ clear.addEventListener('click', function () {
 })
 
 
-document.querySelector('#button').addEventListener('click', function () {
+ function consolid() {
     
     let name = document.querySelector('#name')
     document.querySelector('.return-name').innerHTML = `Nome:${name.value}<br>`
@@ -139,5 +139,6 @@ document.querySelector('#button').addEventListener('click', function () {
     document.querySelector('.return-name').innerHTML += `Descrição:${descricaoCargo.value}<br>`
     let begingDate = document.querySelector("#date")
     document.querySelector('.return-name').innerHTML += `Data de início:${begingDate.value}<br>`
-})
+}
+
 }
