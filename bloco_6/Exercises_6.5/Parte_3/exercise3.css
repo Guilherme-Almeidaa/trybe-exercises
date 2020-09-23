@@ -124,6 +124,7 @@
    }
    #header {
        position: fixed;
+       width: 100%;
    }
    #content-container , p {
     width: 100vh;
