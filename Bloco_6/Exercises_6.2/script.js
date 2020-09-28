@@ -1,4 +1,66 @@
 
+new window.JustValidate(".form", {
+    rules: {
+        name: {
+            required: true,
+            maxLength: 40
+        },
+        email: {
+            required: true,
+            email: true,
+            maxLength: 50
+            
+        },
+        cpf: {
+            required : true,
+            maxLength: 11
+            
+        },
+        end: {
+            required: true,
+            maxLength :200
+            
+        },
+        city: {
+            required: true,
+            maxLength: 28
+            
+        },
+        states: {
+            required: true
+        },
+        casa: {
+            required: true
+
+        },
+        apartemento: {
+            required: true
+        },
+        curriculo:{
+            required:true,
+            maxLength:1000
+        },
+        cargo:{
+            
+            required:true,
+            maxLength:40
+        },
+        descricao:{
+            
+            required:true,
+            maxLength:500
+        },
+        date:{
+            required:true
+        }
+
+
+
+
+
+    }
+});
+
 
 window.onload = function(){ let States = ["Rio Grande do Norte",
 "Alagoas",
