@@ -10,4 +10,4 @@ function sum(a, b) {
 
 // implemente seus testes aqui
 const expected = sum(0, 0)
-assert.equal(expected, 0, 'O resultado deve ser 0')
+assert.deepStrictEqual(expected, 0, 'O resultado deve ser 0')

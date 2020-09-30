@@ -15,7 +15,4 @@ const obj3 = {
   description: 'My Description',
 };
 
-assert.deepEqual(obj1 ,obj2 ,'Não são idênticos');
-assert.deepEqual(obj1 ,obj3 ,'Não são idênticos');
-assert.deepEqual(obj3 ,obj2 ,'Não são idênticos');
-assert.deepEqual(obj3 ,obj1 ,'Não são idênticos');
+assert.deepStrictEqual(obj1 ,obj2 ,'Não são idênticos');
