@@ -11,4 +11,4 @@ function myRemove(arr, item) {
 }
 const list = [1, 2, 3, 4]
 const expected = myRemove(list, 3)
-assert.notDeepEqual(expected , [1,2,3,4] , 'As listas não devem ser iguais')
+assert.notDeepStrictEqual(expected , [1,2,3,4] , 'As listas não devem ser iguais')

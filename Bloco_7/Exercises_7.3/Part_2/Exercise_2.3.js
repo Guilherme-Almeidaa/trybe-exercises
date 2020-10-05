@@ -11,4 +11,4 @@ function myRemove(arr, item) {
 }
 const list = [1, 2, 3, 4];
 const expected = myRemove(list, 3);
-assert.deepEqual(list , [1,2,3,4] ,'Sofreu alterações')
+assert.deepStrictEqual(list , [1,2,3,4] ,'Sofreu alterações')
