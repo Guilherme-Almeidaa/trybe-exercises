@@ -110,9 +110,9 @@ const expected_result = [
 
 function booksOrderedByReleaseYearDesc() {
   const order = (a,b) => {
-      return b.releaseYear-a.releaseYear
+      return b.releaseYear-a.releaseYear;
   }
-  const ordened = books.sort(order)
+  const ordened = books.sort(order);
   return ordened
 }
 

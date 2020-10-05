@@ -66,15 +66,13 @@ const books = [
 const expected_result = false;
 
 function authorUnique() {
-
     const verify = books.every((bookYear) =>
-        !books.some((year) => 
+        !books.some((year) =>
             bookYear.author.birthYear === year.author.birthYear && bookYear.id !== year.id
         )
-
     )
 
-  return verify
+    return verify
 }
 
 assert.equal(authorUnique(), expected_result);

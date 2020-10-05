@@ -64,7 +64,7 @@ const books = [
 ];
 
 function authorBornIn1947() {
-   const nameAuthor = books.find((year) => year.author.birthYear === 1947).author.name
+   const nameAuthor = books.find((year) => year.author.birthYear === 1947).author.name;
    return nameAuthor
 }
 

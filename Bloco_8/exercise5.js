@@ -66,7 +66,7 @@ const books = [
 const expected_result = false
 
 function everyoneWasBornOnSecXX() {
-  const verify = books.every((year) => year.author.birthYear >= 1901 && year.author.birthYear <= 2000)
+  const verify = books.every((year) => year.author.birthYear >= 1901 && year.author.birthYear <= 2000);
   return verify
 }
 
