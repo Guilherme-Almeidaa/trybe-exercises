@@ -9,4 +9,4 @@ function myFizzBuzz(num) {
 }
 
 const expected = myFizzBuzz(15)
-assert.equal(expected , 'fizzbuzz' , 'Retorno não esperado')
+assert.strictEqual(expected , 'fizzbuzz' , 'Retorno não esperado')

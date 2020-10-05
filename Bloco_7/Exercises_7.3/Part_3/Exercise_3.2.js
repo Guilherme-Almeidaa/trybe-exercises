@@ -12,4 +12,4 @@ function myRemoveWithoutCopy(arr, item) {
     return arr;
 }
 const expected = myRemoveWithoutCopy([1, 2, 3, 4], 3)
-assert.notDeepEqual(expected, [1, 2, 3, 4], 'Não deve ser iguais')
+assert.notDeepStrictEqual(expected, [1, 2, 3, 4], 'Não deve ser iguais')

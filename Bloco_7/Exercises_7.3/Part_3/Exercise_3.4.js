@@ -13,4 +13,4 @@ function myRemoveWithoutCopy(arr, item) {
 }
 const list = [1, 2, 3, 4]
 const expected = myRemoveWithoutCopy(list, 5)
-assert.deepEqual(expected , [1,2,3,4] ,'Não retorna o array esperado')
+assert.deepStrictEqual(expected , [1,2,3,4] ,'Não retorna o array esperado')
