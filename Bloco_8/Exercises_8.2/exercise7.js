@@ -63,18 +63,20 @@ const books = [
   },
 ];
 
-const expected_result = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft'
-];
+const expected_result = 'O Senhor dos Anéis';
 
-function formatedBookNames() {
- return books.map((book) => (`${book.name} - ${book.genre} - ${book.author.name}`))
+function authorWith3DotsOnName() {
+  let authors = [];
+  const starters = (book) => {
+      authors.push(book.author.name.split(' '))
+  }
+      books.forEach(starters)
+      const threeStarters = authors.filter((book) => book[0].endsWith('.') && book[1].endsWith('.') && book[2].endsWith('.') )
+      const conteins = books.filter((book) => book.author.name === threeStarters[0].join(' '))
+  
+
+  return conteins[0].name
+
+  
 }
-
-
-assert.deepEqual(formatedBookNames(), expected_result);
+assert.deepEqual(authorWith3DotsOnName(), expected_result);
