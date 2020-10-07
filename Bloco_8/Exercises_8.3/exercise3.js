@@ -71,6 +71,6 @@ function averageAge() {
     return ages.reduce((result, age) => result + age) / ages.length;
 }
 /*Utilizei a HOF forEach para percorrer o objeto
-com livros e adicionalos a variavel ages com o calculo para saber 
-a idade dos escritores quando seu libro foi lançados*/
+com livros e adiciona-los a variavel ages com o calculo para saber 
+a idade dos escritores quando seu livro foi lançados*/
 assert.equal(averageAge(), expected_result);

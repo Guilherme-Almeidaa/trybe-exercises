@@ -75,7 +75,7 @@ const expected_result = {
 
 function longestNamedBook() {
  return  books.reduce((result , nameBook ) => 
- result.name.length > nameBook.name.length ? result : nameBook);//Ultilizei a HOF reduce  e ultilize oparador ternário para verificar qual nome de livro era o maior.
+ result.name.length > nameBook.name.length ? result : nameBook);//Ultilizei a HOF reduce  e ultilizei oparador ternário para verificar qual nome de livro é o maior.
 }
 
 assert.deepEqual(longestNamedBook(), expected_result);
