@@ -30,7 +30,7 @@ const people = [
 
 // escreva filterPeople abaixo
 const filterPeople = (obj) => {
-    const australian = obj.filter((info) => info.nationality === 'Australian' && info.bornIn >= 1901 && info.bornIn <= 2000);
+    const australian = obj.filter((info) => info.nationality === 'Australian' && info.bornIn >= 1901 && info.bornIn <= 2000);//Utilizei a HOF filter para filtrar de acordo com o que pede o exercício.
     return { name: name, bornIn: bornIn, nationality: nationality } = australian;
 }
 const filteredPeople = filterPeople(people)
