@@ -17,7 +17,7 @@ const ships = [
     }
 ]
 
-const shipLength = ({name,length,measurementUnit ='meters'}) => {
+const shipLength = ({name,length,measurementUnit ='meters'}) => { //Utilizei default params.
  return `${name} is ${length} ${measurementUnit} long`
 }
 

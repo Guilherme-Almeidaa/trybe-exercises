@@ -8,7 +8,7 @@ const chiron = ["Chiron", "Bugatti", 2016]
 const toObject = ([name,brand,year]) => {
  
 
-return {name,brand,year}
+return {name,brand,year}//Utilizei abbreviation object literal
 
 } 
     
