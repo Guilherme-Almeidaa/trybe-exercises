@@ -20,8 +20,8 @@ const checkNumber = async () => {
     numberToDivide.forEach(divide);
     return resultDivide;
 }
-const result = () => {
-    checkNumber()
+const result = async () => {
+   await checkNumber()
         .then(sum => sum)
         .then(sum => sum.reduce((result, number) => result + number))
         .then(msg => console.log(msg))

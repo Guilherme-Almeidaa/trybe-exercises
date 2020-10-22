@@ -20,8 +20,8 @@ const checkNumber = async () => {
     numberToDivide.forEach(divide);
     return resultDivide;
 }
-const result = () => {
-    checkNumber()
+const result = async () => {
+   await checkNumber()
     .then(sum => sum)
     .then(msg => console.log(msg))
     .catch(() => console.log(`É mais de oito mil! Essa promise deve estar quebrada!`));

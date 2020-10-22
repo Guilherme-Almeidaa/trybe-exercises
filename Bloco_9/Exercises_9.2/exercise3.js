@@ -11,8 +11,8 @@ const checkNumber = async () => {
     }
     return sum;
 }
-const result = () => {
-    checkNumber()
+const result = async () => {
+   await checkNumber()
         .then(sum => `Sucesso nosso número foi ${sum}`)
         .then(msg => console.log(msg))
         .catch((err) => console.log(err));
