@@ -9,7 +9,8 @@ Tente usar Higher Order Functions! Lembre-se de que tanto uma quanto a outra rec
 
 
 <strong>Bonus<strong>
-
-Utilize somente Higher Order Functions para fazer as operações com o array;
-Refatore a Promise para utilizar somente async e await.
+<ul>
+<li>Utilize somente Higher Order Functions para fazer as operações com o array.</li>
+<li>Refatore a Promise para utilizar somente async e await.</li>
+</ul>
 
