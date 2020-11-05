@@ -5,4 +5,4 @@ async function requestDog() {
     return object
 }
 
-module.exports = requestDog 
+module.exports = { requestDog } 
