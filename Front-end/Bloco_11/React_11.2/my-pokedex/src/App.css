@@ -1,0 +1,47 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  width: 800px;
+  text-align: center;
+  width: 100%;
+}
+
+.App {
+text-align: center;
+display: flex;
+}
+
+.pokemon {
+ display: flex;
+ width: 800px;
+ height: 700px;
+ flex-wrap: wrap;
+ 
+ margin: auto;
+ justify-content: center;
+ 
+}
+
+.cont-pokemons{
+  display: flex;
+  margin:10px ;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+
+
+@media  screen and (max-width: 730px) {
+  .pokemon {
+    width: 100%;
+  }
+ .cont-pokemons {
+   width: 100%;
+ }
+}
+

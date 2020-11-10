@@ -4,8 +4,8 @@ import './App.css';
 const commitments = ['Aprender React', 'Aprender Redux', 'Se esforçar', 'Conseguir emprego']
 const task = (value) => {
   return (
-    value.map((item) => {
-     return <li>{item}</li>
+    value.map((task) => {
+     return <li>{task}</li>
     } )
     
   );
