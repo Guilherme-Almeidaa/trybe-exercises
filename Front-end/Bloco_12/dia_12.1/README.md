@@ -1,0 +1,1 @@
+O exercício está nessa BRANCH : https://github.com/Guilherme-Almeidaa/exercise-pokedex-state/tree/pokedex-state .
