@@ -1,0 +1,10 @@
+db.movies.find(
+    {$and:[
+        {ratings:{
+            $elemMatch:{$gte:64,$lte:105}
+        }},
+        {ratings:{
+            $elemMatch:{$mod:[9,0]}
+        }}
+    ]}
+)
