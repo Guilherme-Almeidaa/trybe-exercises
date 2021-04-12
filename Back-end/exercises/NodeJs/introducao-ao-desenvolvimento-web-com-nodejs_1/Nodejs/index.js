@@ -1,3 +1,3 @@
-const calculoImc = require('./src/(Exer-3)calcula-imc');
+const calculoImc = require('./src/(Exer-5)fibonacci');
 
 calculoImc();

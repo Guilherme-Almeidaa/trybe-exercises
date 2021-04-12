@@ -1,5 +1,4 @@
-const readlineSync = require('readline-sync');
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 
 const questions = [
     {
@@ -7,7 +6,7 @@ const questions = [
         type:'input',
         name:'height',
         message:'Posso saber sua altura?',
-        validate:function(input) {
+        validate: async function(input) {
             return new Promise((resolve,reject)=> {
                 if(isNaN(parseFloat(input))) {
                      return reject(new Error('dijite um numero'))
@@ -23,7 +22,7 @@ const questions = [
         type:'input',
         name:'weight',
         message:'Posso saber sua peso?',
-        validate:function(input) {
+        validate: async function(input) {
             return new Promise((resolve,reject)=> {
                 if(isNaN(parseFloat(input))) {
                      return reject(console.log('dijite um numero'))
