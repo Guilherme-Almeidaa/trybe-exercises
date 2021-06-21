@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="stylesheet" href="./css/feed.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app" class="columns">
+    <div class="column">
+      <div class="tweet">
+        <div class="box">
+          
+        </div>
+        <form id="form-post" >
+          <label for="newPost">
+            Add Post
+            <input id="newPost" type="text" >
+            <button type="submit" >Postar</button>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src='./js/index.js' ></script>
+</body>
+</html>
