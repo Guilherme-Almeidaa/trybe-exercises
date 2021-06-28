@@ -10,7 +10,7 @@ Exercício 5: Considere que a cobertura da tinta é de 1 litro para cada 3 metro
 
 Exercício 6: Crie uma função que receba os três lado de um triângulo e informe qual o tipo de triângulo formado ou "não é triangulo" , caso não seja possível formar um triângulo.
 
-<h1>Bônus<h1>
+Bônus
 
 Exercício 1: Dada uma lista, descubra o menor elemento. Por exemplo, [5, 9, 3, 19, 70, 8, 100, 2, 35, 27] deve retornar 2.
 
